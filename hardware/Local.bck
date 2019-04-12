@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0900PC15A0036
+F https://www.johansontechnology.com/datasheets/0900PC15A0036/0900PC15A0036.pdf
+$ENDCMP
+#
+$CMP CC1352PF3RGZ
+D IC RF TXRX+MCU 802.15.4 48VFQFN
+K 296-39656-1-ND SimpleLink™
+F http://www.ti.com/lit/ds/symlink/cc2650.pdf
+$ENDCMP
+#
+#End Doc Library
