@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/release_pm4fg.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/release_pm4fg.mak" src="package.bld"/>
+        <srcFile name="package/cfg/release_pm4fg.om4fg.dep" src="package/cfg/release_pm4fg.c"/>
+        <srcFile name="package/cfg/release_pm4fg.dep" src="package/cfg/release_pm4fg.cfg"/>
+        <srcFile name="package/cfg/release.xm4fg.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="gnu.targets.arm.M4F"
+            version="gnu.targets.arm.M4F{1,0,7.2,1"
+            rawVersion="7.2.1"
+            platform="ti.platforms.tiva:TM4C1294NCPDT"
+            isa="v7M4"
+            suffix="m4fg"
+            rootDir="C:/ti/ccs901/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32"
+            os="undefined"
+            rts="gnu.targets.arm.rtsv7M">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="release"
+        pname="release.pm4fg"
+        target="gnu.targets.arm.M4F"
+        platform="ti.platforms.simplelink:CC1352"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/release_pm4fg.cfg"
+        xCfgPrefix="package/cfg/release_pm4fg"
+        cfgScript="C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="release"
+        pname="release.xm4fg"
+        target="gnu.targets.arm.M4F"
+        platform="ti.platforms.simplelink:CC1352"
+        profile="release"
+        xCfgScript="package/cfg/release_pm4fg.cfg"
+        xCfgPrefix="package/cfg/release_pm4fg"
+        cfgScript="C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="release.xm4fg"
+        args=""
+        groupName="release.xm4fg"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
