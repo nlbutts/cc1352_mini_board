@@ -11,7 +11,7 @@ build-610059679:
 build-610059679-inproc: ../release.cfg
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: XDCtools'
-	"C:/ti/ccs901/xdctools_3_55_00_11_core/xs" --xdcpath="C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source;C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t gnu.targets.arm.M4F -p ti.platforms.simplelink:CC1352 -r release -c "C:/ti/ccs901/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32" --compileOptions " -DDeviceFamily_CC13X2 " "$<"
+	"C:/ti/xdctools_3_50_08_24_core/xs" --xdcpath="C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source;C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t gnu.targets.arm.M4F -p ti.platforms.simplelink:CC1352 -r release -c "C:/ti/ccs901/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32" --compileOptions " -DDeviceFamily_CC13X2 " "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 

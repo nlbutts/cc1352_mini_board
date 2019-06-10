@@ -10,12 +10,12 @@ K 296-39656-1-ND SimpleLink™
 F http://www.ti.com/lit/ds/symlink/cc2650.pdf
 $ENDCMP
 #
-$CMP SKY13317-373
-F http://www.skyworksinc.com/uploads/documents/SKY13317_373LF_200914K.pdf
+$CMP MX25R8035F
+F http://www.macronix.com/Lists/Datasheet/Attachments/7461/MX25R8035F,%20Wide%20Range,%208Mb,%20v1.6.pdf
 $ENDCMP
 #
-$CMP TPS79601DR
-F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps796
+$CMP SKY13317-373
+F http://www.skyworksinc.com/uploads/documents/SKY13317_373LF_200914K.pdf
 $ENDCMP
 #
 #End Doc Library

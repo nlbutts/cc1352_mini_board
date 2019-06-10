@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Local)(type Legacy)(uri ${KIPRJMOD}/Local.lib)(options "")(descr ""))
+  (lib (name dk_RF-Amplifiers)(type Legacy)(uri C:/projects/digikey-kicad-library/digikey-symbols/dk_RF-Amplifiers.lib)(options "")(descr ""))
 )

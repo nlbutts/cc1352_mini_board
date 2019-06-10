@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg',
+        cfgScript: 'C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../release.cfg',
-    outputPath: 'C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg',
+    outputPath: 'C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg',
     exeName:    'release' + suffix,
     exeIntName: 'release' + suffix.replace('.', '_'),
     targ:       targ,

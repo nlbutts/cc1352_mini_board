@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/release_pm4fg.xdl
-	$(SED) 's"^\"\(package/cfg/release_pm4fgcfg.cmd\)\"$""\"C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/\1\""' package/cfg/release_pm4fg.xdl > $@
+	$(SED) 's"^\"\(package/cfg/release_pm4fgcfg.cmd\)\"$""\"C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/\1\""' package/cfg/release_pm4fg.xdl > $@
 	-$(SETDATE) -r:max package/cfg/release_pm4fg.h compiler.opt compiler.opt.defs

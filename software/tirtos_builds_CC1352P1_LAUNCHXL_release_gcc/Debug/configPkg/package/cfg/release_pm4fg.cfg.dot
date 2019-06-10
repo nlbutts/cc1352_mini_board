@@ -5,7 +5,7 @@ digraph configuration {
     concentrate=true;
     compound=true;
     label="\nConfiguration for configPkg/release.xm4fg"
-  node [font=Helvetica, fontsize=14, fontcolor=black];  subgraph cluster0 {label=""; __cfg [label="C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg", color=white, fontcolor=blue];
+  node [font=Helvetica, fontsize=14, fontcolor=black];  subgraph cluster0 {label=""; __cfg [label="C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/release.cfg", color=white, fontcolor=blue];
     node [font=Helvetica, fontsize=10];    subgraph cluster1 {
         label="";
         xdc_services_global__top [shape=box,label="xdc.services.global\n1,0,0,0", color=white];
@@ -25,27 +25,27 @@ digraph configuration {
     }
     subgraph cluster4 {
         label="";
-        xdc_shelf__top [shape=box,label="xdc.shelf\n1,0,0,1550297790176", color=white];
+        xdc_shelf__top [shape=box,label="xdc.shelf\n1,0,0,1533062897475", color=white];
     }
     subgraph cluster5 {
         label="";
-        xdc_services_spec__top [shape=box,label="xdc.services.spec\n1,0,0,1550297790176", color=white];
+        xdc_services_spec__top [shape=box,label="xdc.services.spec\n1,0,0,1533062897475", color=white];
     }
     subgraph cluster6 {
         label="";
-        xdc_services_intern_xsr__top [shape=box,label="xdc.services.intern.xsr\n1,0,0,1550297790176", color=white];
+        xdc_services_intern_xsr__top [shape=box,label="xdc.services.intern.xsr\n1,0,0,1533062897475", color=white];
     }
     subgraph cluster7 {
         label="";
-        xdc_services_intern_gen__top [shape=box,label="xdc.services.intern.gen\n1,0,0,1550297790176", color=white];
+        xdc_services_intern_gen__top [shape=box,label="xdc.services.intern.gen\n1,0,0,1533062897475", color=white];
     }
     subgraph cluster8 {
         label="";
-        xdc_services_intern_cmd__top [shape=box,label="xdc.services.intern.cmd\n1,0,0,1550297790176", color=white];
+        xdc_services_intern_cmd__top [shape=box,label="xdc.services.intern.cmd\n1,0,0,1533062897475", color=white];
     }
     subgraph cluster9 {
         label="";
-        xdc_bld__top [shape=box,label="xdc.bld\n1,0,2,1550297790176", color=white];
+        xdc_bld__top [shape=box,label="xdc.bld\n1,0,2,1533062897475", color=white];
         xdc_bld__bot [shape=point,label="", style=invis];
         xdc_bld_Utils [style=filled,fillcolor=lightgray, label="Utils"];
         xdc_bld__top -> xdc_bld_Utils[style=invis];
@@ -53,22 +53,22 @@ digraph configuration {
     }
     subgraph cluster10 {
         label="";
-        gnu_targets__top [shape=box,label="gnu.targets\n1,0,1,1550297790176", color=white];
+        gnu_targets__top [shape=box,label="gnu.targets\n1,0,1,1533062897475", color=white];
         gnu_targets__bot [shape=point,label="", style=invis];
     }
     subgraph cluster11 {
         label="";
-        gnu_targets_arm__top [shape=box,label="gnu.targets.arm\n1,0,0,1550297790176", color=white];
+        gnu_targets_arm__top [shape=box,label="gnu.targets.arm\n1,0,0,1533062897475", color=white];
         gnu_targets_arm__bot [shape=point,label="", style=invis];
     }
     subgraph cluster12 {
         label="";
-        xdc_rov__top [shape=box,label="xdc.rov\n1,0,1,1550297790176", color=white];
+        xdc_rov__top [shape=box,label="xdc.rov\n1,0,1,1533062897475", color=white];
         xdc_rov__bot [shape=point,label="", style=invis];
     }
     subgraph cluster13 {
         label="";
-        xdc_runtime__top [shape=box,label="xdc.runtime\n2,1,0,1550297790176", color=white];
+        xdc_runtime__top [shape=box,label="xdc.runtime\n2,1,0,1533062897475", color=white];
         xdc_runtime__bot [shape=point,label="", style=invis];
         xdc_runtime_Assert [style=filled,fillcolor=lightgray, label="Assert"];
         xdc_runtime__top -> xdc_runtime_Assert[style=invis];
@@ -139,7 +139,7 @@ digraph configuration {
     }
     subgraph cluster14 {
         label="";
-        gnu_targets_arm_rtsv7M__top [shape=box,label="gnu.targets.arm.rtsv7M\n1,0,0,1550297790176", color=white];
+        gnu_targets_arm_rtsv7M__top [shape=box,label="gnu.targets.arm.rtsv7M\n1,0,0,1533062897475", color=white];
         gnu_targets_arm_rtsv7M__bot [shape=point,label="", style=invis];
     }
     subgraph cluster15 {
@@ -174,7 +174,7 @@ digraph configuration {
     }
     subgraph cluster20 {
         label="";
-        xdc_runtime_knl__top [shape=box,label="xdc.runtime.knl\n1,0,0,1550297790176", color=white];
+        xdc_runtime_knl__top [shape=box,label="xdc.runtime.knl\n1,0,0,1533062897475", color=white];
         xdc_runtime_knl__bot [shape=point,label="", style=invis];
     }
     subgraph cluster21 {
@@ -190,7 +190,7 @@ digraph configuration {
     }
     subgraph cluster22 {
         label="";
-        ti_catalog_arm_cortexm4__top [shape=box,label="ti.catalog.arm.cortexm4\n1,0,0,1550297790176", color=white];
+        ti_catalog_arm_cortexm4__top [shape=box,label="ti.catalog.arm.cortexm4\n1,0,0,1533062897475", color=white];
         ti_catalog_arm_cortexm4__bot [shape=point,label="", style=invis];
         ti_catalog_arm_cortexm4_CC13xx [style=filled,fillcolor=lightgray, label="CC13xx"];
         ti_catalog_arm_cortexm4__top -> ti_catalog_arm_cortexm4_CC13xx[style=invis];
@@ -198,7 +198,7 @@ digraph configuration {
     }
     subgraph cluster23 {
         label="";
-        ti_catalog__top [shape=box,label="ti.catalog\n1,0,0,1550297790176", color=white];
+        ti_catalog__top [shape=box,label="ti.catalog\n1,0,0,1533062897475", color=white];
     }
     subgraph cluster24 {
         label="";
@@ -229,7 +229,7 @@ digraph configuration {
     }
     subgraph cluster27 {
         label="";
-        ti_platforms_simplelink__top [shape=box,label="ti.platforms.simplelink\n1,0,0,1550297790176", color=white];
+        ti_platforms_simplelink__top [shape=box,label="ti.platforms.simplelink\n1,0,0,1533062897475", color=white];
         ti_platforms_simplelink__bot [shape=point,label="", style=invis];
         ti_platforms_simplelink_Platform [style=filled,fillcolor=lightgray, label="Platform"];
         ti_platforms_simplelink__top -> ti_platforms_simplelink_Platform[style=invis];
@@ -340,7 +340,7 @@ digraph configuration {
     }
     subgraph cluster33 {
         label="";
-        ti_sysbios_rts__top [shape=box,label="ti.sysbios.rts\n2,0,0,0,1550297790176", color=white];
+        ti_sysbios_rts__top [shape=box,label="ti.sysbios.rts\n2,0,0,0,1533062897475", color=white];
         ti_sysbios_rts__bot [shape=point,label="", style=invis];
         ti_sysbios_rts_MemAlloc [style=filled,fillcolor=lightgray, label="MemAlloc"];
         ti_sysbios_rts__top -> ti_sysbios_rts_MemAlloc[style=invis];
@@ -356,7 +356,7 @@ digraph configuration {
     }
     subgraph cluster35 {
         label="";
-        ti_sysbios_gates__top [shape=box,label="ti.sysbios.gates\n2,0,0,0,1550297790176", color=white];
+        ti_sysbios_gates__top [shape=box,label="ti.sysbios.gates\n2,0,0,0,1533062897475", color=white];
         ti_sysbios_gates__bot [shape=point,label="", style=invis];
         ti_sysbios_gates_GateHwi [style=filled,fillcolor=lightgray, label="GateHwi"];
         ti_sysbios_gates__top -> ti_sysbios_gates_GateHwi[style=invis];
@@ -394,7 +394,7 @@ digraph configuration {
     }
     subgraph cluster39 {
         label="";
-        ti_sysbios_xdcruntime__top [shape=box,label="ti.sysbios.xdcruntime\n1,0,0,1550297790176", color=white];
+        ti_sysbios_xdcruntime__top [shape=box,label="ti.sysbios.xdcruntime\n1,0,0,1533062897475", color=white];
         ti_sysbios_xdcruntime__bot [shape=point,label="", style=invis];
         ti_sysbios_xdcruntime_Settings [style=filled,fillcolor=lightgray, label="Settings"];
         ti_sysbios_xdcruntime__top -> ti_sysbios_xdcruntime_Settings[style=invis];
@@ -402,7 +402,7 @@ digraph configuration {
     }
     subgraph cluster40 {
         label="";
-        ti_sysbios_utils__top [shape=box,label="ti.sysbios.utils\n2,0,0,0,1550297790176", color=white];
+        ti_sysbios_utils__top [shape=box,label="ti.sysbios.utils\n2,0,0,0,1533062897475", color=white];
         ti_sysbios_utils__bot [shape=point,label="", style=invis];
     }
     subgraph cluster41 {

@@ -57,11 +57,11 @@
 //*****************************************************************************
 // Number of pixels on LCD X-axis
 // TemplateDisplayFix
-#define LCD_X_SIZE      96
+#define LCD_X_SIZE      128
 
 // Number of pixels on LCD Y-axis
 // TemplateDisplayFix
-#define LCD_Y_SIZE      96
+#define LCD_Y_SIZE      128
 
 // Number of bits required to draw one pixel on the LCD screen
 // TemplateDisplayFix
@@ -74,7 +74,7 @@
 //#define PORTRAIT_FLIP
 
 #define LCD_MEMORY_SIZE (LCD_X_SIZE * LCD_Y_SIZE * BPP + 7) / 8
-#define BYTES_PER_LINE 12
+#define BYTES_PER_LINE LCD_X_SIZE / 8
 #define BYTES_PER_TX   BYTES_PER_LINE + 2
 
 //*****************************************************************************

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:cc1352p_radio-cache
 EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
@@ -22,42 +21,12 @@ Wire Wire Line
 	10250 6700 9550 6700
 Wire Wire Line
 	9550 6800 10250 6800
-$Comp
-L Local:0900PC15A0036 U3
-U 1 1 5CADBDFD
-P 11250 7300
-F 0 "U3" H 12000 6950 50  0000 C CNN
-F 1 "0900PC15A0036" H 11250 7650 50  0000 C CNN
-F 2 "cc1352p_radio:Johanson_0900PC15A0036" H 11250 7300 50  0001 C CNN
-F 3 "https://www.johansontechnology.com/datasheets/0900PC15A0036/0900PC15A0036.pdf" H 11250 7300 50  0001 C CNN
-	1    11250 7300
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10250 7400
-NoConn ~ 10250 7500
-NoConn ~ 12250 7400
-Wire Wire Line
-	10250 7200 10150 7200
-Wire Wire Line
-	10150 7200 10150 6900
-Wire Wire Line
-	9550 6900 10150 6900
-Wire Wire Line
-	10250 7300 10100 7300
-Wire Wire Line
-	10100 7300 10100 7000
-Wire Wire Line
-	9550 7000 10100 7000
 Wire Wire Line
 	9550 7100 10050 7100
 Wire Wire Line
 	10050 7100 10050 7700
 Wire Wire Line
 	10050 7700 12150 7700
-Wire Wire Line
-	12400 7700 12400 7500
-Wire Wire Line
-	12400 7500 12250 7500
 $Comp
 L Connector:Conn_Coaxial J3
 U 1 1 5CADEA1C
@@ -130,13 +99,6 @@ F 3 "" H 12500 8250 50  0001 C CNN
 	1    12500 8250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12250 7200 12500 7200
-Wire Wire Line
-	12500 7200 12500 7300
-Wire Wire Line
-	12250 7300 12500 7300
-Connection ~ 12500 7300
 Text Label 11250 7700 0    50   ~ 0
 RX_TX
 $Comp
@@ -163,10 +125,7 @@ RF_SEL2
 Text Label 13250 7100 0    50   ~ 0
 RF_SEL3
 Wire Wire Line
-	12400 7500 12400 6800
-Wire Wire Line
 	12400 6800 12250 6800
-Connection ~ 12400 7500
 $Comp
 L power:GND #PWR0105
 U 1 1 5CAEA992
@@ -205,14 +164,9 @@ $EndComp
 Wire Wire Line
 	10100 6050 10100 6100
 Wire Wire Line
-	10250 7100 10200 7100
-Wire Wire Line
-	10200 7100 10200 6400
-Wire Wire Line
 	10200 6050 10100 6050
 Wire Wire Line
 	10250 6400 10200 6400
-Connection ~ 10200 6400
 Wire Wire Line
 	10200 6400 10200 6050
 Wire Wire Line
@@ -1107,12 +1061,6 @@ Wire Wire Line
 	13200 6400 12250 6400
 Wire Wire Line
 	12250 6700 12550 6700
-Wire Wire Line
-	13500 6500 13100 6500
-Wire Wire Line
-	13100 6500 13100 7100
-Wire Wire Line
-	13100 7100 12250 7100
 $Comp
 L Device:C C17
 U 1 1 5D029C66
@@ -1135,9 +1083,6 @@ Wire Wire Line
 	12150 8200 12500 8200
 Wire Wire Line
 	12500 8200 12500 8250
-Wire Wire Line
-	12500 7300 12500 8200
-Connection ~ 12500 8200
 $Comp
 L Device:C C18
 U 1 1 5D05CE16
@@ -1239,18 +1184,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 5500 8050 5500
 $Comp
-L Local:TPS79601DR U5
-U 1 1 5CBAE24C
-P 5850 1750
-F 0 "U5" H 5850 2175 50  0000 C CNN
-F 1 "TPS79601DR" H 5850 2084 50  0000 C CNN
-F 2 "Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.65mm" H 5850 1750 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps796" H 5850 1750 50  0001 C CNN
-F 4 "296-29080-1-ND" H 5850 1750 50  0001 C CNN "Digikey"
-	1    5850 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VBUS #PWR014
 U 1 1 5CBB00F5
 P 4950 1250
@@ -1341,41 +1274,26 @@ $EndComp
 $Comp
 L power:GND #PWR015
 U 1 1 5CBCA1E1
-P 5850 2750
-F 0 "#PWR015" H 5850 2500 50  0001 C CNN
-F 1 "GND" H 5855 2577 50  0000 C CNN
-F 2 "" H 5850 2750 50  0001 C CNN
-F 3 "" H 5850 2750 50  0001 C CNN
-	1    5850 2750
+P 6000 2650
+F 0 "#PWR015" H 6000 2400 50  0001 C CNN
+F 1 "GND" H 6005 2477 50  0000 C CNN
+F 2 "" H 6000 2650 50  0001 C CNN
+F 3 "" H 6000 2650 50  0001 C CNN
+	1    6000 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2350 5850 2500
-Wire Wire Line
 	4950 1950 4950 2500
 Wire Wire Line
-	4950 2500 5850 2500
-Connection ~ 5850 2500
-Wire Wire Line
-	5850 2500 5850 2750
-Wire Wire Line
 	4950 1250 4950 1550
-Wire Wire Line
-	5300 1850 5150 1850
-Wire Wire Line
-	5150 1850 5150 1650
 Wire Wire Line
 	5150 1550 4950 1550
 Connection ~ 4950 1550
 Wire Wire Line
 	4950 1550 4950 1650
-Wire Wire Line
-	5300 1650 5150 1650
 Connection ~ 5150 1650
 Wire Wire Line
 	5150 1650 5150 1550
-Wire Wire Line
-	5300 1550 5150 1550
 Connection ~ 5150 1550
 Wire Wire Line
 	6850 1550 6850 1600
@@ -1393,16 +1311,12 @@ Wire Wire Line
 Wire Wire Line
 	6850 2000 6650 2000
 Wire Wire Line
-	6650 2000 6650 1800
-Wire Wire Line
-	6650 1800 6400 1800
+	6650 2000 6650 1850
 Wire Wire Line
 	6850 2100 6850 2000
 Connection ~ 6850 2000
 Wire Wire Line
 	6850 2400 6850 2500
-Wire Wire Line
-	6850 2500 5850 2500
 Wire Wire Line
 	6850 1550 7200 1550
 Wire Wire Line
@@ -1965,4 +1879,39 @@ F 3 "" H 6250 9200 50  0001 C CNN
 	1    6250 9200
 	1    0    0    -1  
 $EndComp
+NoConn ~ 9550 6900
+NoConn ~ 9550 7000
+Wire Wire Line
+	12400 6800 12400 7700
+$Comp
+L Local:TPS796xx U?
+U 1 1 5CF4708E
+P 6000 1800
+F 0 "U?" H 6000 2315 50  0000 C CNN
+F 1 "TPS796xx" H 6000 2224 50  0000 C CNN
+F 2 "" H 6000 1800 50  0001 C CNN
+F 3 "" H 6000 1800 50  0001 C CNN
+	1    6000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1550 5600 1550
+Wire Wire Line
+	5150 1650 5600 1650
+Wire Wire Line
+	5600 1750 5150 1750
+Wire Wire Line
+	5150 1750 5150 1650
+Wire Wire Line
+	6400 1850 6650 1850
+NoConn ~ 6400 1950
+Wire Wire Line
+	4950 2500 6000 2500
+Wire Wire Line
+	6000 2150 6000 2500
+Connection ~ 6000 2500
+Wire Wire Line
+	6000 2500 6850 2500
+Wire Wire Line
+	6000 2500 6000 2650
 $EndSCHEMATC

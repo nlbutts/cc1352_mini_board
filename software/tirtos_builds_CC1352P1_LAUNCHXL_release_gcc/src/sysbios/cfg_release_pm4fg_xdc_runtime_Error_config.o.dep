@@ -1,6 +1,6 @@
 cfg_release_pm4fg_xdc_runtime_Error_config.o: \
- C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/package/cfg/release_pm4fg_xdc_runtime_Error_config.c \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/std.h \
+ C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/package/cfg/release_pm4fg_xdc_runtime_Error_config.c \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/std.h \
  c:\ti\ccs901\ccs\tools\compiler\gcc-arm-none-eabi-7-2017-q4-major-win32\lib\gcc\arm-none-eabi\7.2.1\include\stdarg.h \
  c:\ti\ccs901\ccs\tools\compiler\gcc-arm-none-eabi-7-2017-q4-major-win32\lib\gcc\arm-none-eabi\7.2.1\include\stddef.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/gnu/targets/arm/std.h \
@@ -13,24 +13,24 @@ cfg_release_pm4fg_xdc_runtime_Error_config.o: \
  c:\ti\simplelink_cc13x2_sdk_2_30_00_45\kernel\tirtos\packages\gnu\targets\arm\libs\install-native\arm-none-eabi\include\sys\_intsup.h \
  c:\ti\simplelink_cc13x2_sdk_2_30_00_45\kernel\tirtos\packages\gnu\targets\arm\libs\install-native\arm-none-eabi\include\sys\_stdint.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/BIOS.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/xdc.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/package/package.defs.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Types__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/xdc.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/package/package.defs.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types__epilogue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/BIOS__prologue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/package/package.defs.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Error.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Error__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Main.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IModule.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IHeap.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IInstance.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Memory.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/package/Memory_HeapProxy.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/IGateProvider.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/package/Main_Module_GateProxy.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Error__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Error.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Error__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Main.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IModule.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IHeap.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IInstance.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Memory.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/package/Memory_HeapProxy.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IGateProvider.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/package/Main_Module_GateProxy.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Error__epilogue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/BIOS__epilogue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/cc26xx/Boot.h \
@@ -43,22 +43,22 @@ cfg_release_pm4fg_xdc_runtime_Error_config.o: \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/m3/package/package.defs.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Diags__epilogue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Text.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Log__epilogue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Assert__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Diags.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Diags__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Diags__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Log.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Log__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Text.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Log__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Assert.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Assert__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Assert__epilogue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/interfaces/IHwi.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/cc26xx/TimestampProvider.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/interfaces/ITimestamp.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/ITimestampProvider.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/ITimestampClient.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/ITimestampProvider.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/ITimestampClient.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/interfaces/IIntrinsicsSupport.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport.h \
@@ -100,19 +100,19 @@ cfg_release_pm4fg_xdc_runtime_Error_config.o: \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/interfaces/IRomDevice.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/rts/gnu/ReentSupport.h \
  C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/sysbios/rts/gnu/package/package.defs.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Core.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Defaults.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Gate.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Gate__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Gate__epilogue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Registry.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Registry__prologue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Registry__epilogue.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Startup.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/SysCallback.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/ISystemSupport.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/System.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/package/System_SupportProxy.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/package/System_Module_GateProxy.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/Timestamp.h \
- C:/ti/ccs901/xdctools_3_55_00_11_core/packages/xdc/runtime/package/Timestamp_SupportProxy.h
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Core.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Defaults.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Gate.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Gate__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Gate__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Registry.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Registry__prologue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Registry__epilogue.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Startup.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/SysCallback.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/ISystemSupport.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/System.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/package/System_SupportProxy.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/package/System_Module_GateProxy.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Timestamp.h \
+ C:/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/package/Timestamp_SupportProxy.h

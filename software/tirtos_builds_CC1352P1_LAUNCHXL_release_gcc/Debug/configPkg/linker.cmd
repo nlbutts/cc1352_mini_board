@@ -8,8 +8,8 @@ __STACK_SIZE = STACKSIZE;
 __TI_STACK_SIZE = __STACK_SIZE;
 
 INPUT(
-    C:\projects\cc1352p\tirtos_builds_CC1352P1_LAUNCHXL_release_gcc\Debug\configPkg\package\cfg\release_pm4fg.om4fg
-    C:\projects\cc1352p\tirtos_builds_CC1352P1_LAUNCHXL_release_gcc\src\sysbios\rom_sysbios.am4fg
+    C:\projects\cc1352_mini_board\software\tirtos_builds_CC1352P1_LAUNCHXL_release_gcc\Debug\configPkg\package\cfg\release_pm4fg.om4fg
+    C:\projects\cc1352_mini_board\software\tirtos_builds_CC1352P1_LAUNCHXL_release_gcc\src\sysbios\rom_sysbios.am4fg
     C:\ti\simplelink_cc13x2_sdk_2_30_00_45\kernel\tirtos\packages\gnu\targets\arm\rtsv7M\lib\boot.am4fg
     C:\ti\simplelink_cc13x2_sdk_2_30_00_45\kernel\tirtos\packages\gnu\targets\arm\rtsv7M\lib\syscalls.am4fg
 )

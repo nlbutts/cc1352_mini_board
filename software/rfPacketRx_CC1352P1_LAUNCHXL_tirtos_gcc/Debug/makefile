@@ -6,10 +6,10 @@ SHELL = cmd.exe
 
 CG_TOOL_ROOT := C:/ti/ccs901/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32
 
-GEN_OPTS += C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt
-GEN_OPTS__FLAG := @"C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt"
-GEN_CMDS += C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/linker.cmd
-GEN_CMDS__FLAG := -Wl,-T"C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/linker.cmd"
+GEN_OPTS += C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt
+GEN_OPTS__FLAG := @"C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/compiler.opt"
+GEN_CMDS += C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/linker.cmd
+GEN_CMDS__FLAG := -Wl,-T"C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/linker.cmd"
 
 ORDERED_OBJS += \
 "./CC1352P1_LAUNCHXL.o" \
@@ -325,10 +325,10 @@ all: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "rfPacketRx_CC1352P1_LAUNCHXL_tirtos_gcc.out"
 
 dependents:
-	-cd C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug && $(MAKE) all
+	-cd C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug && $(MAKE) all
 
 # Tool invocations
-rfPacketRx_CC1352P1_LAUNCHXL_tirtos_gcc.out: $(OBJS) $(LDS_SRCS) $(GEN_CMDS) C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/libtirtos_builds_CC1352P1_LAUNCHXL_release_gcc.a
+rfPacketRx_CC1352P1_LAUNCHXL_tirtos_gcc.out: $(OBJS) $(LDS_SRCS) $(GEN_CMDS) C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/libtirtos_builds_CC1352P1_LAUNCHXL_release_gcc.a
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: GNU Linker'
 	"C:/ti/ccs901/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -DDeviceFamily_CC13X2 -DCCFG_FORCE_VDDR_HH=0 -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"rfPacketRx_CC1352P1_LAUNCHXL_tirtos_gcc.map" -nostartfiles -static -Wl,--gc-sections -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source/ti/display/lib" -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source/ti/grlib/lib/gcc/m4f" -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source/ti/drivers/rf/lib" -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source/ti/drivers/lib" -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/ti/dpl/lib" -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/source/ti/devices/cc13x2_cc26x2_v1/driverlib/bin/gcc" -L"C:/ti/simplelink_cc13x2_sdk_2_30_00_45/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard" -L"C:/ti/ccs901/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/lib" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 --specs=nano.specs -o"rfPacketRx_CC1352P1_LAUNCHXL_tirtos_gcc.out" $(ORDERED_OBJS)
@@ -358,7 +358,7 @@ clean:
 
 .PHONY: all clean dependents
 .SECONDARY:
-C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/libtirtos_builds_CC1352P1_LAUNCHXL_release_gcc.a:
+C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/libtirtos_builds_CC1352P1_LAUNCHXL_release_gcc.a:
 
 -include ../makefile.targets
 

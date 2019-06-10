@@ -2,7 +2,7 @@
  *  Do not modify this file; it is automatically 
  *  generated and any modifications will be overwritten.
  *
- * @(#) xdc-G10
+ * @(#) xdc-E10
  */
 
 #define __nested__
@@ -819,9 +819,6 @@ typedef struct {
  * ======== INHERITS ========
  */
 
-const xdc_runtime_Types_Base xdc_runtime_ITimestampClient_Interface__BASE__C __attribute__ ((section (".rodata_xdc_runtime_ITimestampClient_Interface__BASE__C")));
-__FAR__ const xdc_runtime_Types_Base xdc_runtime_ITimestampClient_Interface__BASE__C = {&xdc_runtime_IModule_Interface__BASE__C};
-
 const xdc_runtime_Types_Base xdc_runtime_ISystemSupport_Interface__BASE__C __attribute__ ((section (".rodata_xdc_runtime_ISystemSupport_Interface__BASE__C")));
 __FAR__ const xdc_runtime_Types_Base xdc_runtime_ISystemSupport_Interface__BASE__C = {&xdc_runtime_IModule_Interface__BASE__C};
 
@@ -830,6 +827,9 @@ __FAR__ const xdc_runtime_Types_Base ti_sysbios_interfaces_IIntrinsicsSupport_In
 
 const xdc_runtime_Types_Base ti_sysbios_interfaces_ISeconds_Interface__BASE__C __attribute__ ((section (".rodata_ti_sysbios_interfaces_ISeconds_Interface__BASE__C")));
 __FAR__ const xdc_runtime_Types_Base ti_sysbios_interfaces_ISeconds_Interface__BASE__C = {&xdc_runtime_IModule_Interface__BASE__C};
+
+const xdc_runtime_Types_Base xdc_runtime_ITimestampClient_Interface__BASE__C __attribute__ ((section (".rodata_xdc_runtime_ITimestampClient_Interface__BASE__C")));
+__FAR__ const xdc_runtime_Types_Base xdc_runtime_ITimestampClient_Interface__BASE__C = {&xdc_runtime_IModule_Interface__BASE__C};
 
 
 /*
@@ -1254,15 +1254,17 @@ extern xdc_Void ti_sysbios_knl_Task_restore__E(xdc_UInt);
 __T1_ti_sysbios_knl_Task_Instance_State__stack ti_sysbios_knl_Task_Instance_State_0_stack__A[512];
 #ifdef __ti__sect
     #pragma DATA_SECTION(ti_sysbios_knl_Task_Instance_State_0_stack__A, ".bss");
-#else
+#endif
 #if defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
+#ifndef __TI_COMPILER_VERSION__
 __T1_ti_sysbios_knl_Task_Instance_State__stack ti_sysbios_knl_Task_Instance_State_0_stack__A[512] __attribute__ ((section(".bss")));
 #endif
 #endif
 #ifdef __ti__align
     #pragma DATA_ALIGN(ti_sysbios_knl_Task_Instance_State_0_stack__A, 8);
-#else
-#if defined(__GNUC__)
+#endif
+#ifdef __GNUC__
+#ifndef __TI_COMPILER_VERSION__
 __T1_ti_sysbios_knl_Task_Instance_State__stack ti_sysbios_knl_Task_Instance_State_0_stack__A[512] __attribute__ ((aligned(8)));
 #endif
 #endif
@@ -1592,7 +1594,7 @@ __FAR__ const xdc_SizeT ti_sysbios_knl_Task_Module_State_terminatedQ__O = offset
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = C:/projects/cc1352p/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/package/cfg/release_pm4fg");
+xdc__META(__ASM__, "@(#)__ASM__ = C:/projects/cc1352_mini_board/software/tirtos_builds_CC1352P1_LAUNCHXL_release_gcc/Debug/configPkg/package/cfg/release_pm4fg");
 
 /*
  *  ======== __ISA__ ========
@@ -1696,19 +1698,22 @@ xdc_Int xdc_runtime_Startup_getState__I(xdc_runtime_Types_ModuleId id) {
 }
 
 /*
- * Startup_exec__I is an internal entry point called by target/platform boot
- * code. Boot code is not brought into a partial-link assembly. So, without this 
- * pragma, whole program optimizers would otherwise optimize-out this function.
+ * Startup_exec__I is an internal entry point called by target/platform
+ * boot code. Boot code is not brought into a partial-link assembly. So,
+ * without this pragma, whole program optimizers would otherwise optimize-out
+ * this function.
  */
-#ifdef __ti__sect
+#ifdef __ti__
 #pragma FUNC_EXT_CALLED(xdc_runtime_Startup_exec__I);
 #endif
 
 #ifdef __GNUC__
-#if defined(__clang__) && defined(__ti__)
+#if __GNUC__ >= 4
+#ifdef __llvm__
 xdc_Void xdc_runtime_Startup_exec__I(void) __attribute__ ((used));
 #else
 xdc_Void xdc_runtime_Startup_exec__I(void) __attribute__ ((externally_visible));
+#endif
 #endif
 #endif
 
@@ -1727,19 +1732,22 @@ xdc_Void xdc_runtime_Startup_exec__I(void)
  */
 
 /*
- * Startup_reset__I is an internal entry point called by target/platform boot
- * code. Boot code is not brought into a partial-link assembly. So, without this
- * pragma, whole program optimizers would otherwise optimize-out this function.
+ * Startup_reset__I is an internal entry point called by target/platform
+ * boot code. Boot code is not brought into a partial-link assembly. So,
+ * without this pragma, whole program optimizers would otherwise optimize-out
+ * this function.
  */
 #ifdef __ti__
 #pragma FUNC_EXT_CALLED(xdc_runtime_Startup_reset__I);
 #endif
 
 #ifdef __GNUC__
-#if defined(__clang__) && defined (__ti__)
+#if __GNUC__ >= 4
+#ifdef __llvm__
 xdc_Void xdc_runtime_Startup_reset__I(void) __attribute__ ((used));
 #else
 xdc_Void xdc_runtime_Startup_reset__I(void) __attribute__ ((externally_visible));
+#endif
 #endif
 #endif
 
@@ -1777,7 +1785,7 @@ xdc_Void xdc_runtime_Startup_reset__I(void)
 /*
  *  ======== System_printfExtend__I ========
  *  This function processes optional extended formats of printf.
- *
+ *  
  *  It returns the number of characters added to the result.
  *
  *  Precision (maximum string length) is not supported for %$S.
@@ -1785,52 +1793,52 @@ xdc_Void xdc_runtime_Startup_reset__I(void)
  *  Right-justified (which is default) minimum width is not supported
  *  for %$L, %$S, or %$F.
  */
-xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
+xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt, 
     xdc_VaList *pva, xdc_runtime_System_ParseData *parse)
 {
     xdc_CString fmt = *pfmt;
     xdc_Int     res;
     xdc_Char    c;
     xdc_Bool    found = FALSE;
-
+    
     /* 
      * Create a local variable 'va' to ensure that the dereference of
      * pva only occurs once.
      */
     va_list va = *pva;
-
+    
     res = 0;
 
     c = *fmt++;
     *pfmt = *pfmt + 1;
 
-
+    
     if (c == '$') {
         c = *fmt++;
         *pfmt = *pfmt + 1;
-
+        
         if (c == 'S') {
             /* Retrieve the format string from the argument list */
-            parse->ptr = parse->aFlag ?
+            parse->ptr = parse->aFlag ? 
                 (xdc_Char *) xdc_iargToPtr(va_arg(va, xdc_IArg)) :
                 (xdc_Char *) va_arg(va, xdc_Char *);
-
+            
             /* Update pva before passing it to doPrint. */
             *pva = va;
-
+            
             /* Perform the recursive format. System_doPrint does not advance
              * the buffer pointer, so it has to be done explicitly.
              */
-            res = xdc_runtime_System_doPrint__I(*pbuf, parse->precis,
+            res = xdc_runtime_System_doPrint__I(*pbuf, parse->precis, 
                                                 parse->ptr, pva, parse->aFlag);
 
             if (*pbuf) {
                 *pbuf += res;
             }
-
+            
             /* Update the temporary variable with any changes to *pva */
             va = *pva;
-
+            
             /*
              * Set the length to 0 to indicate to 'doPrint' that nothing should
              * be copied from parse.ptr
@@ -1839,11 +1847,11 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
 
             /* Update the minimum width field */
             parse->width -= res;
-
+            
             /* Indicate that we were able to interpret the specifier */
             found = TRUE;
         }
-
+        
     }
 
     if (c == 'f') {
@@ -1852,7 +1860,7 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
         xdc_Int    negative;
 
         if (parse->aFlag) {
-            xdc_runtime_Assert_isTrue((sizeof(xdc_Float) <= sizeof(xdc_IArg)),
+            xdc_runtime_Assert_isTrue((sizeof(xdc_Float) <= sizeof(xdc_IArg)), 
                 xdc_runtime_System_A_cannotFitIntoArg);
 
             d = argToFloat(va_arg(va, xdc_IArg));
@@ -1880,7 +1888,7 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
         }
 
         /* Assumes four digits after decimal point. We are using a temporary
-         * double variable to force double-precision computations without
+         * double variable to force double-precision computations without 
          * using --fp_mode=strict flag. See the description of that flag in
          * the compiler's doc for a further explanation.
          */
@@ -1896,7 +1904,7 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
         } while (*(--parse->end) == '0');
         ++parse->end;
 #endif
-        parse->len = (UInt)(parse->end - parse->ptr);
+        parse->len = parse->end - parse->ptr;
         /* format integer part (right to left!) */
         parse->ptr = xdc_runtime_System_formatNum__I(parse->ptr,
             (xdc_runtime_System_INum)d, parse->zpad - parse->len, 10);
@@ -1904,7 +1912,7 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
             *(--parse->ptr) = '-';
         }
 
-        parse->len = (UInt)(parse->end - parse->ptr);
+        parse->len = parse->end - parse->ptr;
         found = TRUE;
     }
 
@@ -1918,7 +1926,7 @@ xdc_Int xdc_runtime_System_printfExtend__I(xdc_Char **pbuf, xdc_CString *pfmt,
      * Before returning, we must update the value of pva. We use a label here
      * so that all return points will go through this update.
      * The 'goto end' is here to ensure that there is always a reference to the
-     * label (to avoid the compiler complaining).
+     * label (to avoid the compiler complaining). 
      */
     goto end; 
 end:
@@ -2800,8 +2808,10 @@ __FAR__ const CT__ti_sysbios_family_arm_cc26xx_Boot_Object__table ti_sysbios_fam
 #if defined (__ICCARM__)
 #pragma location = ".data_ti_sysbios_family_arm_cc26xx_Seconds_Module__state__V"
 #endif
-#if defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
-#ifndef __ti__sect
+#if defined(__llvm__) && defined(__ti__)
+ti_sysbios_family_arm_cc26xx_Seconds_Module_State__ ti_sysbios_family_arm_cc26xx_Seconds_Module__state__V __attribute__ ((section(".data:ti_sysbios_family_arm_cc26xx_Seconds_Module__state__V")));
+#elif defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
+#ifndef __TI_COMPILER_VERSION__
 ti_sysbios_family_arm_cc26xx_Seconds_Module_State__ ti_sysbios_family_arm_cc26xx_Seconds_Module__state__V __attribute__ ((section(".data_ti_sysbios_family_arm_cc26xx_Seconds_Module__state__V")));
 #endif
 #endif
@@ -5387,8 +5397,10 @@ __FAR__ const CT__ti_sysbios_rom_cortexm_cc26xx_agama_CC26xx_REVISION ti_sysbios
 #if defined (__ICCARM__)
 #pragma location = ".data_ti_sysbios_rts_gnu_ReentSupport_Module__state__V"
 #endif
-#if defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
-#ifndef __ti__sect
+#if defined(__llvm__) && defined(__ti__)
+ti_sysbios_rts_gnu_ReentSupport_Module_State__ ti_sysbios_rts_gnu_ReentSupport_Module__state__V __attribute__ ((section(".data:ti_sysbios_rts_gnu_ReentSupport_Module__state__V")));
+#elif defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
+#ifndef __TI_COMPILER_VERSION__
 ti_sysbios_rts_gnu_ReentSupport_Module_State__ ti_sysbios_rts_gnu_ReentSupport_Module__state__V __attribute__ ((section(".data_ti_sysbios_rts_gnu_ReentSupport_Module__state__V")));
 #endif
 #endif
@@ -6211,8 +6223,10 @@ __FAR__ const CT__xdc_runtime_Memory_Object__table xdc_runtime_Memory_Object__ta
 #if defined (__ICCARM__)
 #pragma location = ".data_xdc_runtime_Registry_Module__state__V"
 #endif
-#if defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
-#ifndef __ti__sect
+#if defined(__llvm__) && defined(__ti__)
+xdc_runtime_Registry_Module_State__ xdc_runtime_Registry_Module__state__V __attribute__ ((section(".data:xdc_runtime_Registry_Module__state__V")));
+#elif defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
+#ifndef __TI_COMPILER_VERSION__
 xdc_runtime_Registry_Module_State__ xdc_runtime_Registry_Module__state__V __attribute__ ((section(".data_xdc_runtime_Registry_Module__state__V")));
 #endif
 #endif
@@ -6592,8 +6606,10 @@ __FAR__ const CT__xdc_runtime_System_extendFxn xdc_runtime_System_extendFxn__C =
 #if defined (__ICCARM__)
 #pragma location = ".data_xdc_runtime_Text_Module__state__V"
 #endif
-#if defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
-#ifndef __ti__sect
+#if defined(__llvm__) && defined(__ti__)
+xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V __attribute__ ((section(".data:xdc_runtime_Text_Module__state__V")));
+#elif defined(__GNUC__) && !(defined(__MACH__) && defined(__APPLE__))
+#ifndef __TI_COMPILER_VERSION__
 xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V __attribute__ ((section(".data_xdc_runtime_Text_Module__state__V")));
 #endif
 #endif
@@ -7708,13 +7724,14 @@ __FAR__ const CT__constStruct ROM_constStruct = {
 /* ROM_stateStruct */
 #ifdef __ti__sect
 #pragma DATA_SECTION(ROM_stateStruct, ".data:ROM_stateStruct");
-#else
+#endif
 #ifdef __GNUC__
+#ifndef __TI_COMPILER_VERSION__
 __FAR__ TROM__stateStruct ROM_stateStruct __attribute__ ((section(".data_ROM_stateStruct")));
+#endif
 #endif
 #if defined (__IAR_SYSTEMS_ICC__)
 #pragma location = ".data_ROM_stateStruct"
-#endif
 #endif
 __FAR__ TROM__stateStruct ROM_stateStruct = {
     {
@@ -7826,45 +7843,30 @@ __FAR__ TROM__stateStruct ROM_stateStruct = {
 /* xdcRomConstPtr */
 #ifdef __ti__sect
 #pragma DATA_SECTION(xdcRomConstPtr, ".data:xdcRomConstPtr");
-#else
+#endif
 #ifdef __GNUC__
+#ifndef __TI_COMPILER_VERSION__
 const xdc_UInt8 * xdcRomConstPtr __attribute__ ((section(".data_xdcRomConstPtr")));
+#endif
 #endif
 #if defined (__IAR_SYSTEMS_ICC__)
 #pragma location = ".data_xdcRomConstPtr"
-#endif
 #endif
 const xdc_UInt8 * xdcRomConstPtr = (xdc_UInt8 *)&ROM_constStruct;
 
 /* xdcRomStatePtr */
 #ifdef __ti__sect
 #pragma DATA_SECTION(xdcRomStatePtr, ".data:xdcRomStatePtr");
-#else
+#endif
 #ifdef __GNUC__
+#ifndef __TI_COMPILER_VERSION__
 xdc_UInt8 * xdcRomStatePtr __attribute__ ((section(".data_xdcRomStatePtr")));
+#endif
 #endif
 #if defined (__IAR_SYSTEMS_ICC__)
 #pragma location = ".data_xdcRomStatePtr"
 #endif
-#endif
 xdc_UInt8 * xdcRomStatePtr = (xdc_UInt8 *)&ROM_stateStruct;
-
-
-/*
- * ======== xdc.runtime.IGateProvider VIRTUAL FUNCTIONS ========
- */
-
-/* create */
-xdc_runtime_IGateProvider_Handle xdc_runtime_IGateProvider_create( xdc_runtime_IGateProvider_Module mod, const xdc_runtime_IGateProvider_Params *prms, xdc_runtime_Error_Block *eb )
-{
-    return (xdc_runtime_IGateProvider_Handle) mod->__sysp->__create(0, (const xdc_UChar*)prms, sizeof (xdc_runtime_IGateProvider_Params), eb);
-}
-
-/* delete */
-void xdc_runtime_IGateProvider_delete( xdc_runtime_IGateProvider_Handle *instp )
-{
-    (*instp)->__fxns->__sysp->__delete(instp);
-}
 
 
 /*
@@ -7879,6 +7881,23 @@ xdc_runtime_IHeap_Handle xdc_runtime_IHeap_create( xdc_runtime_IHeap_Module mod,
 
 /* delete */
 void xdc_runtime_IHeap_delete( xdc_runtime_IHeap_Handle *instp )
+{
+    (*instp)->__fxns->__sysp->__delete(instp);
+}
+
+
+/*
+ * ======== xdc.runtime.IGateProvider VIRTUAL FUNCTIONS ========
+ */
+
+/* create */
+xdc_runtime_IGateProvider_Handle xdc_runtime_IGateProvider_create( xdc_runtime_IGateProvider_Module mod, const xdc_runtime_IGateProvider_Params *prms, xdc_runtime_Error_Block *eb )
+{
+    return (xdc_runtime_IGateProvider_Handle) mod->__sysp->__create(0, (const xdc_UChar*)prms, sizeof (xdc_runtime_IGateProvider_Params), eb);
+}
+
+/* delete */
+void xdc_runtime_IGateProvider_delete( xdc_runtime_IGateProvider_Handle *instp )
 {
     (*instp)->__fxns->__sysp->__delete(instp);
 }
@@ -9017,10 +9036,10 @@ xdc_Bool xdc_runtime_Types_Module__startupDone__S(void) __attribute__ ((external
 
 extern int __xdc__init(void);
 #ifdef __GNUC__
-#if defined(__clang__) && defined(__ti__)
+#if defined(__llvm__) && defined(__ti__)
     __attribute__ ((used))
 #else
-#ifndef __ti__
+#ifndef __TI_COMPILER_VERSION__
     __attribute__ ((externally_visible))
 #endif
 #endif
@@ -9033,10 +9052,10 @@ __FAR__ int (* volatile __xdc__init__addr)(void) = &__xdc__init;
  */
 
 #ifdef __GNUC__
-#if defined(__clang__) && defined(__ti__)
+#if defined(__llvm__) && defined(__ti__)
     __attribute__ ((used))
 #else
-#ifndef __ti__
+#ifndef __TI_COMPILER_VERSION__
     __attribute__ ((externally_visible))
 #endif
 #endif
@@ -9044,10 +9063,10 @@ __FAR__ int (* volatile __xdc__init__addr)(void) = &__xdc__init;
 const ti_sysbios_heaps_HeapMem_Handle heap0 = (ti_sysbios_heaps_HeapMem_Handle)((ti_sysbios_heaps_HeapMem_Handle)&ti_sysbios_heaps_HeapMem_Object__table__V[0]);
 
 #ifdef __GNUC__
-#if defined(__clang__) && defined(__ti__)
+#if defined(__llvm__) && defined(__ti__)
     __attribute__ ((used))
 #else
-#ifndef __ti__
+#ifndef __TI_COMPILER_VERSION__
     __attribute__ ((externally_visible))
 #endif
 #endif

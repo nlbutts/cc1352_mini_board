@@ -26,7 +26,7 @@
 // Sync Word Length: 32 Bits
 // TX Power: 20 dBm (requires define CCFG_FORCE_VDDR_HH = 0 in ccfg.c, see CC13xx/CC26xx Technical Reference Manual)
 // Enable high output power PA: true
-// Whitening: CC1101/CC2500 compatible
+// Whitening: PN9 Whitening
 
 #include <ti/devices/DeviceFamily.h>
 #include DeviceFamily_constructPath(driverlib/rf_mailbox.h)
@@ -174,7 +174,7 @@ rfc_CMD_PROP_RADIO_DIV_SETUP_PA_t RF_cmdPropRadioDivSetup =
     .formatConf.bBitReversal = 0x0,
     .formatConf.bMsbFirst = 0x0,
     .formatConf.fecMode = 0x8,
-    .formatConf.whitenMode = 0x1,
+    .formatConf.whitenMode = 0x2,
     .config.frontEndMode = 0x0,
     .config.biasMode = 0x1,
     .config.analogCfgMode = 0x0,
